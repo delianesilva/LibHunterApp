@@ -1,0 +1,86 @@
+ion-header ion-navbar {
+  height: 70px;
+}
+
+ion-header ion-navbar ion-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 5px;
+  animation-name: enter;
+  animation-duration: 1.2s;
+}
+
+.search-area {
+  height: 142px;
+}
+
+.search-area button.searchbtn {
+  display: block;
+  margin: 13px auto;
+}
+
+#result {
+  padding-top: 15px;
+}
+
+#result ion-scroll {
+  height: calc(90vh - 142px - 56px);
+}
+
+#result ion-scroll ion-list ion-item .doc {
+  width: 225px;
+}
+
+#result ion-scroll ion-list ion-item .doc > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+
+#result ion-scroll ion-list ion-item .doc .titulo {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#result ion-scroll ion-list ion-item .doc .autor {
+  font-size: 14px;
+}
+
+#result ion-scroll ion-list ion-item .doc .assunto {
+  color: #666;
+}
+
+#result ion-scroll ion-list ion-item .doc .distarnce {
+  color: #666;
+  font-size: 11px;
+}
+
+#result ion-scroll ion-list ion-item ion-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mapButon {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

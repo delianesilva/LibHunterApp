@@ -1,0 +1,46 @@
+details-modal {
+  background-color: #fff;
+
+  ion-header {
+    ion-icon {
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+
+  ion-content {
+    .infos {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .book-title {
+        font-weight: 700;
+      }
+
+      span {
+        font-size: 11px;
+      }
+    }
+
+    .mapa {
+      height: 325px;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+
+      #map {
+        height: 100%;
+      }
+
+      ion-toolbar {
+        h4 {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

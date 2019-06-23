@@ -1,0 +1,28 @@
+page-home {
+    ion-header {
+        height: 56px;
+    }
+
+    .search-area {
+        height: 142px;
+    }
+
+    #result {
+        height: calc(100vh - 142px - 56px);
+        padding-top: 15px;
+
+        #btn-filter {
+            float: right;
+        }
+
+        ion-list {
+            height: 54vh;
+
+            ion-item {
+                h1 {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+details-modal {
+  background-color: #fff;
+}
+
+details-modal ion-header ion-icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+details-modal ion-content .infos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+details-modal ion-content .infos .book-title {
+  font-weight: 700;
+}
+
+details-modal ion-content .infos span {
+  font-size: 11px;
+}
+
+details-modal ion-content .mapa {
+  height: 325px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+details-modal ion-content .mapa #map {
+  height: 100%;
+}
+
+details-modal ion-content .mapa ion-toolbar h4 {
+  color: #fff;
+}

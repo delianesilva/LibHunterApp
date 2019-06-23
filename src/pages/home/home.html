@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>LIB HUNTER</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="search-area">
+    <ion-toolbar>
+      <ion-searchbar animated mode="ios" color="tertiary" placeholder="Pesquisar livros e prod. acadêmicas">
+      </ion-searchbar>
+    </ion-toolbar>
+
+    <ion-item>
+      <ion-label>Documento</ion-label>
+      <ion-select value="1" okText="OK" cancelText="Cancelar">
+        <ion-option value="1">Todos</ion-option>
+        <ion-option value="2">Título</ion-option>
+        <ion-option value="3">Autor</ion-option>
+        <ion-option value="4">Assunto</ion-option>
+      </ion-select>
+    </ion-item>
+    
+    <button ion-button block>
+      Pesquisar
+    </button>
+  </div>
+    
+  <div id="result">
+    <button id="btn-filter" ion-button icon-start color="light">
+      <ion-icon name="options"></ion-icon>
+      Filtros
+    </button>
+
+    <ion-scroll scrollY="true">
+
+      <ion-list>
+        <ion-item>
+          <h1>Título</h1>
+          <span>Autor</span> <br>
+          <span>Assunto</span>
+        </ion-item>
+        <ion-item>
+          <h1>Título</h1>
+          <span>Autor</span> <br>
+          <span>Assunto</span>
+        </ion-item>
+        <ion-item>
+          <h1>Título</h1>
+          <span>Autor</span> <br>
+          <span>Assunto</span>
+        </ion-item>
+        <ion-item>
+          <h1>Título</h1>
+          <span>Autor</span> <br>
+          <span>Assunto</span>
+        </ion-item>
+      </ion-list>
+    </ion-scroll>
+  </div>
+
+</ion-content>

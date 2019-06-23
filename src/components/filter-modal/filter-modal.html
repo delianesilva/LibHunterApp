@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button icon-only clear color="ligth" (click)="closeModal()">
+      <ion-icon color="ligth" name="arrow-back"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="range">
+    <ion-item>
+      <ion-label color="primary">Defina um raio</ion-label>
+      <ion-input type="number" [(ngModel)]="range" min="0" placeholder="Seu range"></ion-input>
+    </ion-item>
+    <button ion-button icon-only color="primary" (click)="setRangeMarkers()">
+      <ion-icon color="ligth" name="search"></ion-icon>
+    </button>
+  </div>
+
+  <div class="mapa">
+    <ion-toolbar padding color="dark">
+      <h4>Mapa</h4>
+    </ion-toolbar>
+    <div id="map" #map></div>
+  </div>
+
+</ion-content>

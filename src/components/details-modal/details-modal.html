@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button icon-only clear color="ligth" (click)="closeModal()">
+      <ion-icon color="ligth" name="arrow-back"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div padding class="infos">
+    <span class="book-title">{{documento.titulo}}</span>
+    <span><strong>Categoria: </strong> {{documento.categoria}}</span>
+    <span><strong>Autor: </strong>{{documento.autor}}</span>
+    <span><strong>Assunto: </strong>{{documento.assunto}}</span>
+    <span><strong>Ano: </strong>{{documento.ano}}</span>
+    <span><strong>Nome: </strong>{{documento.biblioteca.nome}}</span>
+    <span><strong>Instituição: </strong>{{documento.biblioteca.instituicao}}</span>
+    <span><strong>Endereço: </strong>{{documento.biblioteca.endereco}}</span>
+    <span><strong>Url: </strong>{{documento.biblioteca.url}}</span>
+  </div>
+
+  <div class="mapa">
+    <ion-toolbar padding color="dark">
+      <h4>Localização</h4>
+    </ion-toolbar>
+    <div id="map" #map></div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,39 @@
+filter-modal {
+    background-color: #fff;
+  
+    ion-header {
+      ion-icon {
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+  
+    ion-content {
+      .range {
+          height: 100px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+  
+      .mapa {
+        height: calc(100% - 100px);
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+  
+        #map {
+          height: 100%;
+        }
+  
+        ion-toolbar {
+          h4 {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  

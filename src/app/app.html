@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>LIB HUNTER</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="search-area">
+        <ion-toolbar>
+            <ion-searchbar [(ngModel)]="search" animated mode="ios" color="tertiary" placeholder="Pesquisar livros e prod. acadêmicas">
+            </ion-searchbar>
+        </ion-toolbar>
+
+        <ion-item>
+            <ion-label>Documento</ion-label>
+            <ion-select [(ngModel)]="filtro" okText="OK" cancelText="Cancelar">
+                <ion-option [value]="1" selected>Todos</ion-option>
+                <ion-option [value]="2">Título</ion-option>
+                <ion-option [value]="3">Autor</ion-option>
+                <ion-option [value]="4">Assunto</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <button class="searchbtn" ion-button (click)="getSearch()">
+            Pesquisar
+        </button>
+    </div>
+
+    <div id="result" *ngIf="documentos.length > 0">
+
+        <ion-scroll scrollY="true">
+
+            <ion-list>
+                <ion-item *ngFor="let documento of documentos">
+                    <div class="doc">
+                        <h1 class="titulo">{{documento.titulo}}</h1>
+                        <span class="autor">{{documento.autor}}</span>
+                        <span class="assunto">{{documento.assunto}}</span>
+                        <span class="distarnce">{{documento.biblioteca.distance | number:'1.0-0' }}m</span>
+                    </div>
+
+                    <button (click)="presentDetailsModal(documento)" ion-button color="primary">Ver</button>
+                </ion-item>
+            </ion-list>
+        </ion-scroll>
+    </div>
+
+    <button class="mapButon" ion-button block (click)="presentMapModal()">
+        Ver Mapa
+    </button>
+
+</ion-content>

@@ -1,0 +1,1 @@
+page-home ion-header{height:56px}page-home .search-area{height:142px}page-home #result{height:calc(100vh - 142px - 56px);padding-top:15px}page-home #result #btn-filter{float:right}page-home #result ion-list{height:54vh}page-home #result ion-list ion-item h1{font-weight:700}
